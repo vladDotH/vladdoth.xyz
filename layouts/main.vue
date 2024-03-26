@@ -5,5 +5,4 @@
   <main>
     <NuxtPage />
   </main>
-  <Footer></Footer>
 </template>
