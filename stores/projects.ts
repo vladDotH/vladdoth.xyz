@@ -100,44 +100,6 @@ export const projectsData: Project[] = [
     url: 'https://vladdoth.xyz/game/',
     github_url: 'https://github.com/vladDotH/WebCW',
   },
-  {
-    image: '/images/projects/ecology.png',
-    title: 'Ecology',
-    description:
-      'Система анализа спутниковых снимков и работы с ними, имеет веб-интерфейс и android-приложение.',
-    technologies: [
-      {
-        name: 'Python',
-        classes: 'from-yellow-500 to-blue-500 bg-gradient-to-r',
-      },
-      {
-        name: 'Celery',
-        classes: 'from-green-500 to-yellow-600 bg-gradient-to-r',
-      },
-      {
-        name: 'OpenCV',
-        classes: 'from-green-500 to-blue-500 bg-gradient-to-r',
-      },
-      {
-        name: 'Redis',
-        classes: 'from-red-600 to-red-400 bg-gradient-to-r',
-      },
-      {
-        name: 'Typescript',
-        classes: 'from-blue-500 to-blue-600 bg-gradient-to-r',
-      },
-      {
-        name: 'Vue',
-        classes: 'from-green-500 to-green-600 bg-gradient-to-r',
-      },
-      {
-        name: 'Kotlin',
-        classes: 'from-violet-500 to-orange-600 bg-gradient-to-r',
-      },
-    ],
-    github_url: 'https://github.com/moevm/nosql2h23-ecology',
-    url: 'https://vladdoth.xyz/ecology/',
-  },
 
   {
     image: '/images/projects/attendance.png',
@@ -215,7 +177,46 @@ export const projectsData: Project[] = [
     ],
     url: 'http://store.wex-web.ru/catalog',
   },
-]
+
+  {
+    image: '/images/projects/ecology.png',
+    title: 'Ecology',
+    description:
+      'Система анализа спутниковых снимков и работы с ними, имеет веб-интерфейс и android-приложение.',
+    technologies: [
+      {
+        name: 'Python',
+        classes: 'from-yellow-500 to-blue-500 bg-gradient-to-r',
+      },
+      {
+        name: 'Celery',
+        classes: 'from-green-500 to-yellow-600 bg-gradient-to-r',
+      },
+      {
+        name: 'OpenCV',
+        classes: 'from-green-500 to-blue-500 bg-gradient-to-r',
+      },
+      {
+        name: 'Redis',
+        classes: 'from-red-600 to-red-400 bg-gradient-to-r',
+      },
+      {
+        name: 'Typescript',
+        classes: 'from-blue-500 to-blue-600 bg-gradient-to-r',
+      },
+      {
+        name: 'Vue',
+        classes: 'from-green-500 to-green-600 bg-gradient-to-r',
+      },
+      {
+        name: 'Kotlin',
+        classes: 'from-violet-500 to-orange-600 bg-gradient-to-r',
+      },
+    ],
+    github_url: 'https://github.com/moevm/nosql2h23-ecology',
+    url: 'https://vladdoth.xyz/ecology/',
+  },
+].reverse()
 
 export const useProjectsStore = defineStore('projects', () => {
   const projects = projectsData
