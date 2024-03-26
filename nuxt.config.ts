@@ -40,8 +40,4 @@ export default defineNuxtConfig({
   typescript: {
     typeCheck: true,
   },
-
-  app: {
-    baseURL: '/me',
-  },
 })
