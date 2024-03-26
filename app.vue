@@ -1,20 +1,30 @@
-<script setup>
-useHead({
-  titleTemplate: (titleChunk) => {
-    return titleChunk ? `${titleChunk} - Saugi` : 'Saugi';
-  },
-  htmlAttrs: {
-    lang: 'en'
-  },
-  meta: [
-    { hid: 'description', name: 'description', content: 'Ahmad Saugi is a professional full-stack web developer who had 4+ years of experience and currently pursuing bachelor of computer science. And I love making open-source projects.' }
-  ]
-})
-</script>
 <template>
   <div id="app" class="min-h-screen">
     <NuxtLayout>
-      <NuxtPage/>
+      <NuxtPage />
     </NuxtLayout>
   </div>
 </template>
+
+<script setup lang="ts">
+useHead({
+  titleTemplate: (titleChunk) => {
+    return titleChunk ? `${titleChunk} - VladDotH` : 'VladDotH'
+  },
+  htmlAttrs: {
+    lang: 'ru',
+  },
+  meta: [
+    {
+      name: 'description',
+      content:
+        `VladDotH, Болкунов Владислав. Full-stack разработчик, и просто любитель программирования.` +
+        `Студент СПбГЭТУ "ЛЭТИ". Разработчик в ОИС УИТ "ЛЭТИ"`,
+    },
+  ],
+  link: [
+    { rel: 'icon', type: 'image/svg+xml', href: '/icon.svg' },
+    { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico', sizes: 'any' },
+  ],
+})
+</script>
