@@ -66,7 +66,7 @@ export const projectsData: Project[] = [
         classes: 'from-yellow-500 to-blue-500 bg-gradient-to-r',
       },
     ],
-    github_url: 'https://github.com/vladDotH/pyBot/tree/master/pyBot',
+    github_url: 'https://github.com/vladDotH/pyEV3',
   },
   {
     image: '/images/projects/tetris.png',
