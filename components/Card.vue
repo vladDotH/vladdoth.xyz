@@ -51,13 +51,7 @@
 <script setup lang="ts">
 import { Project } from '~/stores/projects'
 
-const props = defineProps<{
+defineProps<{
   project: Project
 }>()
 </script>
-
-<style>
-.stacks {
-  scrollbar-width: thin;
-}
-</style>
