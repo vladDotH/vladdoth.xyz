@@ -216,6 +216,29 @@ export const projectsData: Project[] = [
     github_url: 'https://github.com/moevm/nosql2h23-ecology',
     url: 'https://vladdoth.xyz/ecology/',
   },
+
+  {
+    image: '/images/projects/mail2tg.png',
+    title: 'Mail2Tg',
+    description:
+      'Телеграм-бот для пересылки email-сообщений в телеграм-чаты по настраиваемым правилам.',
+    technologies: [
+      {
+        name: 'Go',
+        classes: 'from-cyan-400 to-cyan-300 bg-gradient-to-r',
+      },
+      {
+        name: 'IMAP',
+        classes: 'from-red-500 to-yellow-500 bg-gradient-to-r',
+      },
+      {
+        name: 'TelegramAPI',
+        classes: 'from-sky-600 to-sky-300 bg-gradient-to-r',
+      },
+    ],
+    github_url: 'https://github.com/vladDotH/mail2tg',
+    url: 'https://github.com/vladDotH/mail2tg',
+  },
 ].reverse()
 
 export const useProjectsStore = defineStore('projects', () => {
