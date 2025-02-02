@@ -239,6 +239,20 @@ export const projectsData: Project[] = [
     github_url: 'https://github.com/vladDotH/mail2tg',
     url: 'https://github.com/vladDotH/mail2tg',
   },
+
+  {
+    image: '/images/projects/litemw.png',
+    title: 'LiteMW',
+    description: 'Набор библиотек для бэкенд разработки на Typescript',
+    technologies: [
+      {
+        name: 'Typescript',
+        classes: 'from-blue-500 to-blue-600 bg-gradient-to-r',
+      },
+    ],
+    github_url: 'https://github.com/litemw',
+    url: 'https://litemw.org/ru',
+  },
 ].reverse()
 
 export const useProjectsStore = defineStore('projects', () => {
