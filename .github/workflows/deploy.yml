@@ -1,0 +1,29 @@
+name: deploy
+on:
+  release:
+    types:
+      - published
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: Deploy site
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - name: Remote deploy
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USER }}
+          key: ${{ secrets.SSH_KEY }}
+          script: |
+            source ~/.nvm/nvm.sh
+            cd ${{ secrets.FOLDER }};
+            git checkout master;
+            git pull;
+            nvm use;
+            pnpm i;
+            pnpm generate;
